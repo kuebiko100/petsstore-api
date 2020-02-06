@@ -1,0 +1,33 @@
+<h2>My Dogs!!!!!!!!!!!!!</h2>            
+<a routerLink="/adddog" href="#">
+    <img src="assets/img/dogicon.png" alt="logo" style="height: 100px;">
+    Click to add Dog
+</a>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Did</th>
+      <th>Name</th>
+      <th>Color</th>
+      <th>Price</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tguru of dogs">
+      <td>{{tguru.did}}</td>
+      <td>{{tguru.name}}</td>
+      <td>{{tguru.color}}</td>
+      <td>{{tguru.price}}</td>
+      <td>
+       <a [routerLink]="" (click)="deleteDog(tguru)"><img src="assets/img/delete.jfif" style="height: 60px;">
+       </a>
+
+       <a [routerLink]="" (click)="editDog(tguru)"><img src="assets/img/edit.png" style="height: 60px;">
+       </a>
+       
+
+      </td>
+    </tr>
+  </tbody>
+</table>

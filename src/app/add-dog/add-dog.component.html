@@ -1,0 +1,31 @@
+
+ 
+<img src="assets/img/dogs.png" style="height: 200px;margin:10 100 10 100" >
+<br/><br/>
+<span style="color: blue;font-weight: bold;">{{message}}</span>
+
+<br/>
+ <label style="font-weight: bold;">Name </label>
+ <input type="text" name="name" class="form-control" [(ngModel)]='dog.name' placeholder="Enter  name"/>
+ <br/>
+ 
+ <label style="font-weight: bold;">Color </label>
+ <select  name="color" class="form-control" [(ngModel)]='dog.color'>
+      <option>Green</option>
+      <option>Pink</option>
+      <option>White</option>
+      <option>Black</option>
+      <option>Brown</option>
+      <option>Yellow</option>
+ </select>    
+ <br/>
+ <label style="font-weight: bold;">Price </label>
+ <input type="text" name="price" class="form-control" [(ngModel)]='dog.price' placeholder="Enter  price"/>
+ <br/>
+ <hr/>
+ <button type="button" class="btn btn-primary" (click)="addDog();">{{buttonLable}}</button>
+ &nbsp; &nbsp; &nbsp; 
+ <button type="button" [hidden]="!showCancel" class="btn btn-danger" (click)="cancelDog();">Cancel</button>
+ <br/> <br/>
+ 
+ <br/><br/><br/><br/>

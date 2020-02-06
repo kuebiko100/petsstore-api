@@ -1,0 +1,23 @@
+
+ 
+ <div style="width: 50%;">
+<img src="assets/img/login.png" style="height: 200px;margin:10 100 10 100" >
+<br/><br/>
+<span style="color: blue;font-weight: bold;">{{message}}</span>
+
+<br/>
+ <label style="font-weight: bold;">Name </label>
+ <input type="text" name="username" class="form-control" [(ngModel)]='auth.username' placeholder="Enter  username"/>
+ <br/>
+    
+ <label style="font-weight: bold;">Price </label>
+ <input type="password" name="password" class="form-control" [(ngModel)]='auth.password' placeholder="Enter  password"/>
+ <br/>
+ <hr/>
+ <button type="button" class="btn btn-primary" (click)="authUser();">Login</button>
+ &nbsp; &nbsp; &nbsp; 
+ <button type="button" [hidden]="!showCancel" class="btn btn-danger" (click)="clearText();">Cancel</button>
+</div>
+ <br/> <br/>
+          
+ <br/><br/><br/><br/>
